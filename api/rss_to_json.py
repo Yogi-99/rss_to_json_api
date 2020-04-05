@@ -12,11 +12,11 @@ def get_books(parsed):
     for entry in entries:
         parsed_date = entry['published'].split()[:4]
         books.append({
-            'book_name': parsed.feed['title'],
+            # 'book_name': parsed.feed['title'],
             'id': entry['id'],
             'audio_file': entry['id'],
             'duration': entry['itunes_duration'],
-            'chapter_name': entry['title'],
+            # 'chapter_name': entry['title'],
             'taught_by': entry['summary'],
             'subtitle': entry['subtitle'],
             'published': entry['published'],
